@@ -45,7 +45,13 @@
                 ></a-entity>
             </a-marker>
 
-            <a-entity camera></a-entity>
+            <a-entity camera>
+                <a-camera
+                    gps-camera 
+                    arjs-look-controls='smoothingFactor: 0.1'
+                    rotation-reader
+               ></a-camera>
+            </a-entity>
         </a-scene>
     </body>
 </html>
